@@ -1,0 +1,352 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+ul, li {
+	list-style: none;
+}
+
+body {
+	background: #333;
+	background: url('../images/background.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+aside.asidebg {
+	width: 12%;
+	background: radial-gradient(silver, grey);
+	float: left;
+	margin-top: 6em;
+	opacity: 0.9;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+.deck {
+	width: 12%;
+	height: 25em;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+section {
+	width: 75%;
+	height: 32em;
+	background: white;
+	float: right;
+	margin: 4em;
+	margin-top: -23em;
+}
+
+.navbg {
+	width: 100%;
+	height: 2em;
+	background: black;
+	opacity: 0.2;
+}
+
+ul.dirname {
+	width: 100%;
+	height: 2em;
+	margin-top: -2em;
+	opacity: 1;
+	text-align: center;
+}
+
+.dirname li {
+	display: inline-block;
+	float: left;
+}
+
+.dirname li:last-child {
+	float: right;
+	text-align: right;
+	width: 80%;
+	height: 1.9em;
+}
+
+.fofname {
+	float: right;
+	color: blue;
+	background: white;
+	border-radius: 5px;
+	width: 100%;
+	height: 1.8em;
+	font-size: 1em;
+}
+
+.dir {
+	width: 10px;
+	height: 1em;
+	line-height: 1em;
+}
+
+.permalinks {
+	width: 100%;
+}
+
+.permalink {
+	width: 98%;
+	color: green;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	text-align: left;
+	padding: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.permalink img {
+	width: 16px;
+	height: 16px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.permalink:hover {
+	color: red;
+}
+
+.permalink:last-child {
+	width: 50px;
+	height: 40px;
+	text-align: center;
+	float: right;
+	border-radius: 50%;
+}
+
+.permalink:last-child img {
+	width: 40px;
+	height: 40px;
+}
+
+.permalink:last-child:hover {
+	background: red;
+}
+
+
+.dirdeck {
+	width: 100%;
+	height: 25em;
+	box-shadow: inset 2px -2px 3px #eee;
+	overflow: auto;
+}
+
+.direc {
+	width: 70px;
+	height: 70px;
+	font-size: 0.5em;
+	overflow: hidden;
+	margin: 5px;
+}
+
+nav.dirs {
+	margin: 3px;
+}
+
+.direc img {
+	width: 100%;
+	height: 60px;
+}
+
+.direc:hover {
+	background: gold;
+	color: blue;
+}
+
+.selected {
+	background: gold;
+	color: blue;
+}
+
+.viewer {
+	width: 80%;
+	height: 600px;
+	z-index: 9999;
+	position: fixed;
+	margin: 4% 15%;
+	top: 0;
+	left: 0;
+	background: grey;
+}
+
+.titlebar {
+	width: 100%;
+	height: 2em;
+	background: silver;
+	color: black;
+	text-align: center;
+}
+
+.titlebar li {
+	display: inline-block;
+	color: white;
+}
+
+.title {
+	float: left;
+	padding-left: 5px;
+}
+
+.closebutton , .minbutton {
+	float: right;
+	width: 0.5em;
+	height: 0.5em;
+	line-height: 0.5em;
+}
+
+.closebutton:hover {
+	color: red;
+}
+
+.closebutton {
+	border-bottom-right-radius: 5px;
+}
+
+.minbutton {
+	border-bottom-left-radius: 5px;
+}
+
+.minbutton:hover {
+	color: blue;
+}
+
+
+.viewbox {
+	width: 100%;
+	height: 550px;
+	margin-top: 5px;
+	overflow: auto;
+}
+
+.imageviewer {
+	display: none;
+	width: 100%;
+	text-align: center;
+}
+
+.image {
+	max-width: 100%;
+	max-height: 500px;
+	display: inline-block;
+	cursor: zoom-in;
+}
+
+.docviewer {
+	width: 100%;
+	text-align: center;
+}
+
+.doc {
+	width: 90%;
+	height: 500px;
+}
+
+#player {
+	width: 16em;
+	background: whiteSmoke;
+	margin: 50px auto;
+	box-shadow: 1px 1px 3px black;
+	z-index: 9999;
+	position: fixed;
+	margin: 1% 70%;
+	top: 0;
+	left: 0;
+}
+
+.topbar {
+	width: 100%;
+	height: 1em;
+	background: silver;
+	overflow: hidden;
+}
+
+.musicname {
+	width: 80%;
+	color: yellow;
+	font-size: 0.8em;
+	text-align: center;
+	animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+    0%   { text-indent: 27.5em }
+    100% { text-indent: -105em }
+}
+
+.board {
+	display: block;
+}
+
+.parts {
+	display: inline-block;
+	margin: 0;
+	margin-top: 5px;
+}
+
+.album {
+	width: 26%;
+	padding-left: 5px;
+}
+
+.dboard {
+	width: 65%;
+	padding-left: 2px;
+}
+
+#playlist {
+	display: none;
+	width: 100%;
+	height: 5em;
+	overflow: auto;
+	background: white;
+	box-shadow: inset 2px -2px 3px #eee;
+	border-top: 1px solid grey;
+}
+
+.view {
+	display: block;
+}
+
+#albumart {
+	box-shadow: 1px px 10px black, -px -px 10px black;
+	border-radius: 5px;
+}
+
+.albumart {
+	width: 4em;
+	height: 4em;
+}
+
+.cbutton {
+	width: 1em;
+	height: 1em;
+	border-radius: 10px;
+}
+
+.cbutton  img{
+	width: 1em;
+	width: 1em;
+}
+
+.on {
+	background: white;
+}
+
+.track {
+	padding-left: 2px;
+	background: silver;
+	cursor: pointer;
+	border-bottom: 1px solid green;
+	height: 1.5em;
+	font-size: 0.7em;
+	overflow: hidden;
+	color: blue;
+}
+
+.track:hover {
+	background: grey;
+}
