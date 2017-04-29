@@ -9,7 +9,7 @@ type="text/css" media="screen"/>
 <script type="text/javascript" src="static/jquery/jquery-3.1.1.js"></script>
 <script type="text/javascript" src="static/jquery/jquery-ui.min.js"></script>
 <script type="text/javascript" src="static/js/main.js"></script>
-<script type="text/javascript" src="static/js/player.js"></script>
+<script type="text/javascript" src="static/js/apps.js"></script>
 </head>
 <body>
 <div class="containter">
@@ -31,7 +31,7 @@ type="text/css" media="screen"/>
 <div class='navbg'>
 </div>
 <ul class='dirname'>
-<li class='ui-button dir predir'><</li>
+<li class='ui-button dir predir'>&lt;</li>
 <li class='ui-button dir nextdir' disabled>></li>
 <li><input type='text' class='fofname' value='C:\Users\DAVID\Desktop\iMPORTANT\Pythonworks\RDweb\index.html'/></li>
 </ul>
@@ -44,6 +44,45 @@ type="text/css" media="screen"/>
 </nav>
 </div>
 </article>
+<div class='viewer app'>
+<ul class='titlebar'>
+<li class='title'>Desktop</li>
+<li class='closebutton ui-button'>x<li>
+<li class='minbutton ui-button'>-</li>
+</ul>
+<div class='viewbox' id='viewbox'>
+<script type='text/javascript'>
+</script>
+</div>
+</div>
+<div id='player' class='player app'>
+<div class='topbar'>
+<div class='musicname'>
+<h3>
+</h3>
+</div>
+</div>
+<div class='board'>
+<div id='album' class='album parts'>
+<img src='static/images/albumart.jpg' class='albumart'>
+</div>
+<div class='dboard parts'>
+<div id='controls'>
+<ul>
+<li class='cbutton prev ui-button'><img src='static/images/previous.gif'/></li>
+<li class='cbutton play ui-button'><img class='playpause' src='static/images/play.gif'/></li>
+<li class='cbutton next ui-button'><img src='static/images/next.gif'/></li>
+<li class='cbutton repeat ui-button'><img src='static/images/repeat.png'/></li>
+<li class='cbutton shuffle ui-button'><img src='static/images/shuffle.png'/></li>
+<li class='cbutton playlist ui-button'><img src='static/images/playlist.png'/></li>
+</ul>
+</div>
+</div>
+<ol id='playlist'>
+</ol>
+<audio>
+</audio>
+</div>
 </section>
 </div>
 <footer class='ui-widget'>

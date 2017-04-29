@@ -340,13 +340,14 @@ nav.dirs {
 	padding-left: 2px;
 	background: silver;
 	cursor: pointer;
-	border-bottom: 1px solid green;
+	border-bottom: 1px solid whiteSmoke;
 	height: 1.5em;
 	font-size: 0.7em;
 	overflow: hidden;
-	color: blue;
+	color: white;
 }
 
 .track:hover {
-	background: grey;
+	background: whiteSmoke;
+	color: black;
 }
